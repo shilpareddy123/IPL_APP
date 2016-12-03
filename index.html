@@ -1,0 +1,74 @@
+<html>
+
+<head lang="en">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+
+	<title>Indian Premier League</title>
+	<script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet">
+
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
+
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style media="screen">
+		div{
+			display: inline;
+		}
+	</style>
+</head>
+
+<body>
+		   <div class="row">
+			<div class="header">
+				<div class="container clearfix">
+					<h1 id="logo"><i>IPL</i> </h1>
+					<h2 id="Home"><i>HOME</i><h2>
+						<h3 id="player"><i>player</i></h3>
+				</div>
+			</div>
+       </div>
+	<div class="container">
+		<div class="row">
+				<div class="col-md-4">
+					<div class="main-content">
+
+							<div class="all-products page">
+
+								<ul class="products-list" style="margin-left:10px">
+									<script id="products-template" type="x-handlebars-template">​
+						{{#each this}}
+							<li data-index="{{id}}">
+								<a href="#" class="product-photo"><img src="{{team_img_url}}" height="130" alt="{{team_name}}"/></a>
+								<h2><a href="#"> {{team_name}} </a></h2>
+								<input type="button" value="click"></input>
+								</li>
+						{{/each}}
+					</script>
+								</ul>
+
+							</div>
+						<div class="error page">
+							<h3>Sorry, something went wrong :(</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<script src="web/js/config.js"></script>
+	<script src="web/js/iplApp.js"></script>
+	<script src="web/js/header.js"></script>
+	<link href="web/css/styles.css" rel="stylesheet">
+	<link href="web/css/header.css" rel="stylesheet">
+
+</body>
+</html>

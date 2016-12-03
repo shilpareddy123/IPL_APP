@@ -1,0 +1,18 @@
+<!-- /**
+*@Filename:team.html
+*@Date:03-12-2016
+*@Purpose:function which will return Team Logo information
+*@Created By:Shilpa K N
+*/ -->
+<div class="all-products">
+    <ul class="products-list" style="margin-left:10px">
+        <script id="products-template" type="x-handlebars-template">​
+        {{#each this}}
+            <li data-index="{{id}}">
+                <a href="#team/{{id}}" class="product-photo"><img src="{{team_img_url}}" height="130" alt="{{team_name}}" class="img-responsive" /></a>
+                <h2><a href="#"> {{team_name}} </a></h2>
+            </li>
+            {{/each}}
+        </script>
+    </ul>
+</div>

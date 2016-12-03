@@ -1,0 +1,48 @@
+/**
+*@Filename:team-info.html
+*@Date:03-12-2016
+*@Purpose:function which will return players information
+*@Created By:Shilpa K N
+*/
+<!-- <div class="all-players page">// <li data-index="{{@index}}">
+    //     <a href="#"><img src="{{player_img_url}}" height="130" alt="{{player_name}}" class="img-responsive"/></a>
+    //     <h2><a href="#"> {{player_name}} </a></h2>
+    // </li> -->
+
+<div class="players-list">
+    <script>
+        $(function() {
+            $(".flip").flip({
+                trigger: 'click',
+                axis: 'x'
+            });
+        });
+    </script>
+    <script id="player-template" type="x-handlebars-template">
+        ​ {{#each this}}
+
+        <div class="flip col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="front">
+                <img src="{{player_img_url}}" class="image" style="max-width:170px;max-height:210px" class="img-responsive" alt="" />
+
+            </div>
+
+            <div class="back">
+                <table align="center">
+                    <tr>
+                        <td>
+                            <li><b>Role</b> : {{player_role}}</li>
+                            <li><b>Player name</b> : {{player_name}}</li>
+                            <li><b>Batting Style</b> : {{player_batting_style}}</li>
+                            <li><b>Bowling Style</b> : {{player_bowling_style}}</li>
+                            <li><b>Date of Birth</b> : {{player_dob}}</li>
+                            <li><b>Nationality</b> : {{player_nationality}}</li>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        {{/each}}
+    </script>
+</div>
+</div>
