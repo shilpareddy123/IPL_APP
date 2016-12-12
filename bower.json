@@ -1,0 +1,22 @@
+{
+  "name": "ipl-app1",
+  "homepage": "https://github.com/shilpareddy123/IPL_APP",
+  "authors": [
+    "shilpareddy123 <shilpareddy.2793@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "firebase": "^3.6.1",
+    "handlebars": "^4.0.5"
+  }
+}
